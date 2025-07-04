@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CHRIS Client Customization Form</title>
+  <style>
+    body { font-family: Arial, sans-serif; background-color: #f4f4f4; padding: 40px; }
+    form { background: white; padding: 25px; border-radius: 12px; max-width: 700px; margin: auto; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+    h2 { text-align: center; }
+    label { display: block; margin-top: 15px; font-weight: bold; }
+    input, textarea, select { width: 100%; padding: 8px; margin-top: 5px; border-radius: 6px; border: 1px solid #ccc; }
+    button { background: #28a745; color: white; padding: 10px 20px; margin-top: 20px; border: none; border-radius: 6px; cursor: pointer; width: 100%; }
+    button:hover { background: #218838; }
+  </style>
+</head>
+<body>
+  <form action="https://formspree.io/f/moqgggvq" method="POST">
+    <h2>CHRIS Customization Form</h2>
+
+    <label for="client_name">Client/Company Name</label>
+    <input type="text" name="client_name" id="client_name" required>
+
+    <label for="contact_email">Primary Email for Setup & Delivery</label>
+    <input type="email" name="contact_email" id="contact_email" required>
+
+    <label for="subscription_type">Subscription Tier</label>
+    <select name="subscription_type" id="subscription_type" required>
+      <option value="monthly">Monthly - $70</option>
+      <option value="yearly">Yearly - $450</option>
+    </select>
+
+    <label for="business_description">Brief Business Description / Focus</label>
+    <textarea name="business_description" id="business_description" rows="4"></textarea>
+
+    <label for="preferred_modules">Modules Requested (select all that apply)</label>
+    <select name="preferred_modules" id="preferred_modules" multiple>
+      <option value="data_entry">Data Entry</option>
+      <option value="data_extraction">Data Extraction</option>
+      <option value="survey_farming">Survey & Microtask Farming</option>
+      <option value="auditing">Document Auditing</option>
+      <option value="marketing">Lead Generation/Marketing</option>
+      <option value="custom">Custom Automation</option>
+    </select>
+
+    <label for="paypal_email">Your PayPal Email (for linking revenue flows)</label>
+    <input type="email" name="paypal_email" id="paypal_email" required>
+
+    <label for="system_username">Desired Username for Admin Login</label>
+    <input type="text" name="system_username" id="system_username" required>
+
+    <label for="system_password">Desired Password for Admin Login</label>
+    <input type="password" name="system_password" id="system_password" required>
+
+    <label for="notes">Any Special Instructions or Notes</label>
+    <textarea name="notes" id="notes" rows="3"></textarea>
+
+    <p style="font-size: 0.9em; color: #555; margin-top: 20px;">
+      ⚠️ Note: Your system will only be deployed after successful payment verification. A complete package including install instructions will be emailed to your contact email.
+    </p>
+
+    <button type="submit">Submit Customization Request</button>
+  </form>
+</body>
+</html>
